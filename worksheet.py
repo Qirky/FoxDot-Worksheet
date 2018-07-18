@@ -10,7 +10,7 @@ print("Hello, World")
 
 # Multiple lines not separated by blank space are run together
 
-num = 2 + 
+num = 2 + 2
 print("2 + 2 is", num)
 
 # We use "print" to show data in the console at the bottom of the screen. 
