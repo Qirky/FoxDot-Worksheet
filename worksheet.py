@@ -4,13 +4,13 @@
 # Part 1: Basics
 # --------------
 
-# To "run" code in FoxDot, put your text cursor on the line of code and press Cmd+Enter
+# To "run" code in FoxDot, put your text cursor on the line of code and press Ctrl+Enter or Cmd+Enter on MacOS.
 
 print("Hello, World")
 
-# Multiple lines not separated by blank sapce are run together
+# Multiple lines not separated by blank space are run together
 
-num = 2 + 2
+num = 2 + 
 print("2 + 2 is", num)
 
 # We use "print" to show data in the console at the bottom of the screen. 
