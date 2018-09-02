@@ -744,7 +744,7 @@ d1.stop()
 # the first layer to 2 but the others as 0, we could use code that
 # looks like this:
     
-d1 >> play("<xs><  * ><(d  )d( [( d)d])>", sample=P(2, 0, 0))
+d1 >> play("<xs><  * ><(+  )+( [( +)+])>", sample=P(2, 0, 0))
 
 d1.stop()
 
@@ -752,14 +752,14 @@ d1.stop()
 # alternate left then right (i.e. -1 and 1) then I could use code 
 # that looks like this:
     
-d1 >> play("<xs><  * ><(d  )d( [( d)d])>", sample=P(2, 0, 0), pan=P(0, 0, [-1, 1]))
+d1 >> play("<xs><  * ><(+  )+( [( +)+])>", sample=P(2, 0, 0), pan=P(0, 0, [-1, 1]))
 
 d1.stop()
 
 # This all comes in very useful when you want to use the "every"
 # method with a more complex sequence:
     
-d1 >> play("<xs><  * ><(d  )d( [( d)d])>", sample=P(2, 0, 0), pan=P(0, 0, [-1, 1])).every([12,4], "trim", 3)
+d1 >> play("<xs><  * ><(+  )+( [( +)+])>", sample=P(2, 0, 0), pan=P(0, 0, [-1, 1])).every([12,4], "trim", 3)
 
 d1.stop()
 
@@ -814,7 +814,7 @@ d1.stop()
 
 # Put this all together for a funky beat in one line of text:
 
-d1 >> play("<|x2|s><  |*(3[33])| ><(d  )d( [( d)d])>", pan=P(0, 0, [-1,1]))
+d1 >> play("<|x2|s><  |*(3[33])| ><(+  )+( [( +)+])>", pan=P(0, 0, [-1,1]))
 
 d1.stop()
 
@@ -837,7 +837,7 @@ p1 >> keys(b1.pitch + (0, 2, 4), dur=8)
 
 p2 >> blip(P[0, 2, 4].stretch(8), dur=1/2, sus=2) + var([0, 2], [6, 2])
     
-d1 >> play("<xs><  * ><(d  )d( [( d)d])>", sample=3)
+d1 >> play("<xs><  * ><(+  )+( [( +)+])>")
 
 Clock.clear()
 
