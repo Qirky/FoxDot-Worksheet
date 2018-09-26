@@ -705,9 +705,9 @@ p1.stop()
 
 # Let's create a very simple drum pattern
 
-d1 >> play("xs", sample=3)
-d2 >> play("  * ", sample=3)
-d3 >> play("(d  )d( [( d)d])", sample=3)
+d1 >> play("xs", sample=2)
+d2 >> play("  * ", sample=2)
+d3 >> play("(+  )+( [( +)+])", sample=2)
 
 Clock.clear()
 
@@ -718,7 +718,7 @@ Clock.clear()
 # several sample strings over one another by putting sequences next to
 # one another but surrounded with <> arrows like so:
     
-d1 >> play("<xs><  * ><(d  )d( [( d)d])>", sample=3)
+d1 >> play("<xs><  * ><(+  )+( [( +)+])>", sample=2)
 
 d1.stop()
 
