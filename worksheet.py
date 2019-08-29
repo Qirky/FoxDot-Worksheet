@@ -505,6 +505,37 @@ b1 >> dbass([0, 2, 3, 4], dur=8)
 
 Clock.clear()
 
+# There are also some "infinite" Patterns that keep generating values for you. These are especially
+# useful when utilising elements of randomness.
+
+# Generate random integers between 0 and 8 using 'PRand'
+
+p1 >> blip(PRand(0, 8))
+
+p1.stop()
+
+# Generate random values from a list
+
+p1 >> blip(PRand([0, 2, 4]))
+
+p1.stop()
+
+# Generate floating point values within a range using PWhite (white noise randomness)
+
+p1 >> blip(pan=PWhite(-1, 1), amp=PWhite(0, 1))
+
+p1.stop()
+
+# A cool example of combining indexing and random values to create interesting rhythms:
+
+d1 >> play("x-o ")
+
+p1 >> blip(dur=1/4, amp=PRand([0,1])[:8])
+
+# Re-evaluate the code to get a new rhythm!
+
+Clock.clear()
+
 #######################################################################
 
 # Part 6: Using time to create extended sequences
